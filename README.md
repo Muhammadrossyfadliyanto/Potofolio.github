@@ -84,4 +84,4 @@ Pastikan nama repository sesuai aturan jika ingin user-site: yakni username.gith
 
 ---
 
-Jika kamu setuju, saya dapat menuliskan panduan khusus untuk portfolio desain grafis kamu — lengkap dengan screenshot tiap langkah dan template teks yang bisa diikuti. Mau saya siapkan?
+
