@@ -2,140 +2,183 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background: #121212;
-    color: white;
+    background: #0e1126;
+    color: #ffffff;
 }
 
-/* HERO */
-.hero {
-    position: relative;
-    text-align: left;
-    padding: 100px 10%;
-    background: linear-gradient(to bottom, #000, #222);
-}
-
-.hero h1 {
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.hero p {
-    margin-top: 10px;
-    font-size: 18px;
-    opacity: 0.8;
-}
-
-.cover {
+/* Navbar */
+header {
     width: 100%;
-    margin-top: 30px;
-    border-radius: 12px;
-}
-
-/* ABOUT */
-.about {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    padding: 70px 10%;
-    gap: 30px;
-    background: #1c1c1c;
-}
-
-.about-text h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-.about-text p {
-    margin-top: 10px;
-    opacity: 0.85;
-}
-
-.foto {
-    width: 260px;
-    height: auto;
-    border-radius: 12px;
-    border: 2px solid #ffffff20;
-}
-
-.experience ul {
-    margin-top: 10px;
-    line-height: 28px;
-    opacity: 0.85;
-}
-
-/* PORTFOLIO */
-.portfolio {
-    padding: 70px 8%;
-    text-align: center;
-}
-
-.gallery {
-    margin-top: 30px;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
     display: flex;
-    justify-content: center;
-    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.gallery img {
-    width: 30%;
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #9f6bff;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #9f6bff;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 50px;
+}
+
+.hero-text h1 span {
+    color: #9f6bff;
+}
+
+.hero-img {
+    width: 300px;
     border-radius: 12px;
-    transition: .4s;
 }
 
-.gallery img:hover {
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #9f6bff;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.btn:hover {
     transform: scale(1.05);
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 70px 10%;
-    background: #0d0d0d;
+/* Sections */
+.section {
+    margin: 100px 50px;
 }
 
-footer h2 {
-    font-size: 36px;
+.section h2 {
+    color: #9f6bff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #9f6bff;
+    display: inline-block;
 }
 
-.social {
-    margin-top: 25px;
+/* Skills */
+.skills-container {
     display: flex;
-    justify-content: center;
-    gap: 35px;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
-.social a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+.skill-card {
+    background: #1b1f3b;
+    padding: 12px 25px;
+    border-radius: 8px;
     transition: 0.3s;
 }
 
-.social a i {
-    margin-right: 8px;
+.skill-card:hover {
+    background: #9f6bff;
+    color: #000;
 }
 
-.social a:hover {
-    opacity: 0.6;
+/* Project */
+.project-card {
+    background: #1b1f3b;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .about {
-        grid-template-columns: 1fr;
+.btn2 {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #9f6bff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Contact */
+.contact-section {
+    margin: 100px 50px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #9f6bff;
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1b1f3b;
+    margin-top: 40px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
         text-align: center;
     }
 
-    .gallery {
-        flex-direction: column;
-    }
-
-    .gallery img {
-        width: 100%;
+    .hero-img {
+        margin-top: 20px;
+        width: 60%;
     }
 }
