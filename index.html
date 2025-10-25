@@ -3,70 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Desain</title>
+    <title>M Rossy F.y Portofolio</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Font Awesome untuk ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
-
 <body>
 
+    <!-- Navbar -->
+    <header>
+        <div class="logo">M Rossy F.y</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">Tentang</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+    </header>
+
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>DESAIN PORTOFOLIO</h1>
-            <p>Muhammad Rossy F.y- Desain Grafis</p>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Halo, Saya <span>Muhammad Rossy F.y </span></h1>
+            <p> Saya merupakan pelajar di SMK Muhammadiyah 3 yang memiliki passion dalam dunia desain grafis. Saya tertarik mengembangkan kreativitas visual dan kemampuan desain untuk menghasilkan karya yang menarik, komunikatif, dan bermanfaat bagi banyak orang..</p>
+            <a href="#project" class="btn">Lihat Project</a>
         </div>
-        <img src="img/cover.jpg" alt="Cover" class="cover">
+        <img src="https://via.placeholder.com/300" class="hero-img">
     </section>
 
-    <!-- Tentang Saya -->
-    <section class="about">
-        <div class="about-text">
-            <h2>Tentang Saya</h2>
-            <h3>Muhammad Rossy F.y</h3>
-            <p>Halo, nama saya Muhammad Rossy F.Y. Saya merupakan pelajar 
-                di SMK Muhammadiyah 3 yang memiliki
-                passion dalam dunia desain grafis.
-                Saya tertarik mengembangkan kreativitas
-                visual dan kemampuan desain untuk
-                menghasilkan karya yang menarik, komunikatif, dan bermanfaat bagi banyak orang..</p>
-        </div>
+    <!-- Tentang -->
+    <section id="about" class="section">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah pelajar kelas XI RPL yang sedang belajar pemrograman Di sekolah SMK MUH 3 TANGSEL Tentang HTML dan CSS. Saya memiliki passion dalam dunia investasi dan ekonomi global.</p>
+    </section>
 
-        <img src="img/foto-profil.jpg" class="foto" alt="Foto Profil">
-
-        <div class="experience">
-            <h3>Pengalaman</h3>
-            <ul>
-                <li>Nama Pengalaman 1 (Tahun)</li>
-                <li>Nama Pengalaman 2 (Tahun)</li>
-                <li>Nama Pengalaman 3 (Tahun)</li>
-            </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Keahlian</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML</div>
+            <div class="skill-card">CSS</div>
+            <div class="skill-card">Web Design</div>
+            <div class="skill-card">Finance</div>
+            <div class="skill-card">balap</div>
         </div>
     </section>
 
-    <!-- Hasil Karya -->
-    <section class="portfolio">
-        <h2>Hasil Karya</h2>
-        <div class="gallery">
-            <img src="img/karya1.jpg" alt="Karya 1">
-            <img src="img/karya2.jpg" alt="Karya 2">
-            <img src="img/karya3.jpg" alt="Karya 3">
+    <!-- Project Section -->
+    <section id="project" class="section">
+        <h2>Project</h2>
+        <div class="project-card">
+            <h3>Muhammad Rossy F.y Capital Insight</h3>
+            <p>Platform edukasi tentang investasi, mindset keuangan, dan analisis ekonomi global.</p>
+            <a href="#" class="btn2">Coming Soon</a>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Kontak -->
+    <section id="contact" class="contact-section">
+        <h2>Hubungi Saya</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><strong>Email:</strong> muhammadrossyfadliyanto@gmail.com</p>
+                <p><strong>Phone:</strong> 6285777898882</p>
+                <p><strong>Lokasi:</strong> Tangerang Selatan</p>
+            </div>
+
+            <form>
+                <input type="text" placeholder="Nama" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Pesan"></textarea>
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
-        <h2>TERIMA KASIH</h2>
-        <p>Lets Work Together</p>
-
-        <div class="social">
-            <a href="#" class="wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="#" class="email"><i class="fas fa-envelope"></i> Email</a>
-            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="#" class="ig"><i class="fab fa-instagram"></i> Instagram</a>
-        </div>
+        <p>© 2025 Muhammad Rossy F.y. All Rights Reserved</p>
     </footer>
 
 </body>
